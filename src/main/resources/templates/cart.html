@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div th:replace="~{navigation :: navigation(Products)}"/>
+    <h2>Корзина</h2>
+    <br>
+    <span th:if="${@cart.items.isEmpty()}">Положите что-нибудь в корзину</span>
+    <table th:if="${!@cart.items.isEmpty()}" class="table table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <td>Название</td>
+            <td>Количество</td>
+            <td>Сумма</td>
+            <td>Удалить</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="oi : ${@cart.items}">
+            <td th:text="${oi.product.name}"/>
+            <td>
+                <a class="btn btn-light" th:href="@{'/cart/dec/' + ${oi.product.id} }">-</a>
+                <span th:text="${oi.quantity}"/>
+                <a class="btn btn-light" th:href="@{'/cart/inc/' + ${oi.product.id}}">+</a>
+            </td>
+            <td th:text="${oi.quantity + ' x ' + oi.pricePerProduct + ' = ' + oi.price}"/>
+            <td>
+                <a class="btn btn-secondary" th:href="@{'/cart/remove/' + ${oi.product.id}}">X</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Итого:</td>
+            <td></td>
+            <td th:text="${@cart.price}"></td>
+        </tr>
+        <tr>
+            <td>
+                <a class="btn btn-success" th:href="@{'/orders/checkout'}">Сохранить</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

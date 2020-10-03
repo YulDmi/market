@@ -1,9 +1,35 @@
-create table products (
-    id     bigserial,
-    name   varchar (255) not null,
-    cost  int not null,
-    primary key (id)
+create table customers (
+    id                      bigserial primary key ,
+    name                    varchar(255) not null
 );
+
+create table products (
+    id     bigserial primary key ,
+    name   varchar (255) not null,
+    cost  int not null
+
+);
+create table orders (
+    id          bigserial primary key,
+    customer_id varchar(255),
+    price   int
+);
+
+create table order_items (
+    id          bigserial primary key ,
+    product_id  bigint references products(id),
+    order_id    bigint references orders(id),
+    price       int,
+    price_per_product int,
+    quantity    int
+);
+
+insert into customers (name)
+values
+('Tom'),
+('John'),
+('Nick');
+
 
 insert into products (name, cost)
 values

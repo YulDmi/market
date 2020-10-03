@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div th:replace="~{navigation :: navigation(Products)}"/>
+    <h2>Ваш заказ</h2>
+    <br>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <td>Название</td>
+            <td>Количество</td>
+            <td>Сумма</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="oi : ${@cart.items}">
+            <td th:text="${oi.product.name}"/>
+            <td th:text="${oi.quantity}"/>
+            <td th:text="${oi.price}"/>
+        </tr>
+        <tr>
+            <td>Итого:</td>
+            <td></td>
+            <td th:text="${@cart.price}"></td>
+        </tr>
+    </table>
+    <form method="get" th:action="@{/orders/save}" }>
+        <div class="form-group col-md-6">
+            <label for="name">Имя</label>
+            <input class="form-control" name="name" required="" type="text" id="name">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="telephone">Телефон</label>
+            <input class="form-control" name="telephone" required type="text" id="telephone">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="address">Адрес</label>
+            <input class="form-control" name="address" required type="text" id="address">
+        </div>
+        <button class="btn btn-success" type="submit">Оформить заказ</button>
+        <a class="btn btn-primary" th:href="@{/orders/checkout}">Очистить поля</a>
+    </form>
+    </tbody>
+</div>
+</body>
+</html>
