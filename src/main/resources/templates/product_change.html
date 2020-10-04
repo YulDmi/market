@@ -9,43 +9,26 @@
 </head>
 <body>
 <div class="container">
-<!--    <h1>Products table</h1>-->
 
-<!--    <table class="table" >-->
-<!--        <thead>-->
-<!--        <tr>-->
-<!--            <td>ID</td>-->
-<!--            <td>Название</td>-->
-<!--            <td>Цена</td>-->
-<!--&lt;!&ndash;            <td>Действие</td>&ndash;&gt;-->
-<!--        </tr>-->
-<!--        </thead>-->
-<!--        <tbody>-->
-<!--        <tr th:each="p : ${products}">-->
-<!--            <td th:text="${p.id}"/>-->
-<!--            <td th:text="${p.name}"/>-->
-<!--            <td th:text="${p.cost}"/>-->
-<!--&lt;!&ndash;            <td>&ndash;&gt;-->
-<!--&lt;!&ndash;                <a class="btn btn-primary" th:href="@{'/change_product/' + ${p.id}}">Редактировать</a>&ndash;&gt;-->
-<!--&lt;!&ndash;            </td>&ndash;&gt;-->
-<!--            </td>-->
-<!--        </tr>-->
-<!--        </tbody>-->
-<!--    </table>-->
     <h2>Редактировать продукт</h2>
 
-    <form method="GET" th:action="@{/add_change}">
-        <input th:value = "${product.id}" readonly type="number" name="id">
-        <input th:value = "${product.name}" type="text" name="new_name">
-        <input th:value = "${product.cost}" type="number" name="new_cost">
-
-        <button class="btn btn-primary" type="submit">Изменить</button>
+    <form method="POST" th:action="@{/add_change}" th:object=${product}>
+        <input th:field="*{id}" type="hidden" class="form-control">
+        <div class="form-row">
+            <div class="col form-group">
+                <label>Наименование</label>
+                <input th:field="*{name}" type="text" class="form-control" placeholder="Название">
+            </div>
+            <div class="col form-group">
+                <label>Цена</label>
+                <input th:field="*{cost}" type="number" class="form-control" placeholder="Цена">
+            </div>
+        </div>
+        <div class="form-group">
+        <button class="btn btn-primary" type="submit">Сохранить</button>
+            <a class="btn btn-primary" th:href="@{/products}">Отменить</a>
+        </div>
     </form>
-<!--    <h2>Выбрать продукт</h2>"-->
-<!--    <a class="btn btn" th:href="@{'/products/' + ${'min'}}">с минимальной ценой</a>-->
-<!--    <a class="btn btn-" th:href="@{'/products/' + ${'max'}}">с максимальной ценой</a>-->
-<!--    <a class="btn btn-" th:href="@{'/products/' + ${'min_max'}}">мин и макс цена</a>-->
-    <a class="btn btn-" th:href="@{/products}">полный список</a>
 </div>
 </body>
 </html>
