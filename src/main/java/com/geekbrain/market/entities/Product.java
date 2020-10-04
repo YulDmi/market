@@ -20,4 +20,10 @@ public class Product {
 
     @Column(name = "cost")
     private Integer cost;
+
+    public Product(Long id, String name, Integer cost) {
+       this.id = id;
+        this.name = name;
+        this.cost = cost;
+    }
 }

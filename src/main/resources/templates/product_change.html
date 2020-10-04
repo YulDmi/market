@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<!--    <h1>Products table</h1>-->
+
+<!--    <table class="table" >-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <td>ID</td>-->
+<!--            <td>Название</td>-->
+<!--            <td>Цена</td>-->
+<!--&lt;!&ndash;            <td>Действие</td>&ndash;&gt;-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr th:each="p : ${products}">-->
+<!--            <td th:text="${p.id}"/>-->
+<!--            <td th:text="${p.name}"/>-->
+<!--            <td th:text="${p.cost}"/>-->
+<!--&lt;!&ndash;            <td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a class="btn btn-primary" th:href="@{'/change_product/' + ${p.id}}">Редактировать</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </td>&ndash;&gt;-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+    <h2>Редактировать продукт</h2>
+
+    <form method="GET" th:action="@{/add_change}">
+        <input th:value = "${product.id}" readonly type="number" name="id">
+        <input th:value = "${product.name}" type="text" name="new_name">
+        <input th:value = "${product.cost}" type="number" name="new_cost">
+
+        <button class="btn btn-primary" type="submit">Изменить</button>
+    </form>
+<!--    <h2>Выбрать продукт</h2>"-->
+<!--    <a class="btn btn" th:href="@{'/products/' + ${'min'}}">с минимальной ценой</a>-->
+<!--    <a class="btn btn-" th:href="@{'/products/' + ${'max'}}">с максимальной ценой</a>-->
+<!--    <a class="btn btn-" th:href="@{'/products/' + ${'min_max'}}">мин и макс цена</a>-->
+    <a class="btn btn-" th:href="@{/products}">полный список</a>
+</div>
+</body>
+</html>
