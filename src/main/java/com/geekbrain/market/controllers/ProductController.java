@@ -25,7 +25,7 @@ public class ProductController {
         if (page <= 0) {
             page = 1;
         }
-        ProductFilter productFilter = new ProductFilter(params);
+        ProductFilter productFilter = new ProductFilter(null);
         Page<Product> products = productService.findAll(productFilter.getSpec(), page - 1, 3);
         model.addAttribute("products", products);
         model.addAttribute("filterDefinition", productFilter.getFilterDefinition());
