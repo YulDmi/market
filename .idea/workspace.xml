@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/store/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/store/store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson7" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MarketApplication" />
         <item itemvalue="Application.MarketApplication" />
         <item itemvalue="Application.MarketApplication" />
         <item itemvalue="Application.MarketApplication" />
@@ -202,22 +200,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1002" y="205" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600350943" />
-    <state width="1384" height="267" key="GridCell.Tab.0.bottom" timestamp="1602940599853">
+    <state width="1865" height="267" key="GridCell.Tab.0.bottom" timestamp="1602942274243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1384" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602940599853" />
-    <state width="1384" height="267" key="GridCell.Tab.0.center" timestamp="1602940599853">
+    <state width="1865" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602942274243" />
+    <state width="1865" height="267" key="GridCell.Tab.0.center" timestamp="1602942274243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1384" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602940599853" />
-    <state width="1384" height="267" key="GridCell.Tab.0.left" timestamp="1602940599853">
+    <state width="1865" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602942274243" />
+    <state width="1865" height="267" key="GridCell.Tab.0.left" timestamp="1602942274243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1384" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602940599853" />
-    <state width="1384" height="267" key="GridCell.Tab.0.right" timestamp="1602940599853">
+    <state width="1865" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602942274243" />
+    <state width="1865" height="267" key="GridCell.Tab.0.right" timestamp="1602942274243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1384" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602940599853" />
+    <state width="1865" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602942274243" />
     <state width="1349" height="331" key="GridCell.Tab.1.bottom" timestamp="1601184511349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
