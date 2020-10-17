@@ -4,12 +4,16 @@
         <tr>
             <td>Название</td>
             <td>Цена</td>
+            <td></td>
         </tr>
         <tbody>
 
         <tr ng-repeat="p in ProductsPage.content">
             <td>{{p.name}}</td>
             <td>{{p.cost}}</td>
+            <td>
+                <button class="btn btn-success" ng-click = "addToCart(p.id)">в корзину</button>
+            </td>
         </tr>
         </tbody>
     </table>

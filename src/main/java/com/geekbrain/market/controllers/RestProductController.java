@@ -25,8 +25,8 @@ public class RestProductController {
         }
 
         ProductFilter productFilter = new ProductFilter(params);
-        Page<Product> content = productService.findAll(productFilter.getSpec(), page - 1, 5);
-        return content;
+      return   productService.findAll(productFilter.getSpec(), page - 1, 5);
+
     }
 
     @GetMapping("/{id}")

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="" />
+    <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/CartDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/OrderItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admin/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admin/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/utils/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/utils/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/store/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/store/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/market.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -43,26 +61,27 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/admin" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.geekbrain.market.entities" />
-      <recent name="com.geekbrain.market.repositories" />
-      <recent name="com.geekbrain.market.services" />
-      <recent name="com.geekbrain.market.controllers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\templates" />
-      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\store" />
-      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\store" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\db\migration" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\admin" />
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\templates" />
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\store" />
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.geekbrain.market.entities" />
+      <recent name="com.geekbrain.market.repositories" />
+      <recent name="com.geekbrain.market.services" />
+      <recent name="com.geekbrain.market.controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -81,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MarketApplication" />
         <item itemvalue="Application.MarketApplication" />
         <item itemvalue="Application.MarketApplication" />
         <item itemvalue="Application.MarketApplication" />
@@ -165,14 +185,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="lesson8" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1602419647419">
+    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1602945239173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602419647419" />
+    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602945239173" />
     <state x="1100" y="349" width="559" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601719125793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1100" y="349" width="559" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1601719125793" />
+    <state x="743" y="306" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1602962892798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="306" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602962892798" />
     <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1602943201026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,38 +221,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1002" y="205" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600350943" />
-    <state width="1865" height="267" key="GridCell.Tab.0.bottom" timestamp="1602942274243">
+    <state width="1865" height="210" key="GridCell.Tab.0.bottom" timestamp="1602966298859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602942274243" />
-    <state width="1865" height="267" key="GridCell.Tab.0.center" timestamp="1602942274243">
+    <state width="1865" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602966298859" />
+    <state width="1865" height="210" key="GridCell.Tab.0.center" timestamp="1602966298859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602942274243" />
-    <state width="1865" height="267" key="GridCell.Tab.0.left" timestamp="1602942274243">
+    <state width="1865" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602966298859" />
+    <state width="1865" height="210" key="GridCell.Tab.0.left" timestamp="1602966298858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602942274243" />
-    <state width="1865" height="267" key="GridCell.Tab.0.right" timestamp="1602942274243">
+    <state width="1865" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602966298858" />
+    <state width="1865" height="210" key="GridCell.Tab.0.right" timestamp="1602966298859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602942274243" />
-    <state width="1349" height="331" key="GridCell.Tab.1.bottom" timestamp="1601184511349">
+    <state width="1865" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602966298859" />
+    <state width="1865" height="313" key="GridCell.Tab.1.bottom" timestamp="1602966013089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1349" height="331" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601184511349" />
-    <state width="1349" height="331" key="GridCell.Tab.1.center" timestamp="1601184511348">
+    <state width="1865" height="313" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602966013089" />
+    <state width="1865" height="313" key="GridCell.Tab.1.center" timestamp="1602966013089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1349" height="331" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601184511348" />
-    <state width="1349" height="331" key="GridCell.Tab.1.left" timestamp="1601184511347">
+    <state width="1865" height="313" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602966013089" />
+    <state width="1865" height="313" key="GridCell.Tab.1.left" timestamp="1602966013089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1349" height="331" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601184511347" />
-    <state width="1349" height="331" key="GridCell.Tab.1.right" timestamp="1601184511349">
+    <state width="1865" height="313" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602966013089" />
+    <state width="1865" height="313" key="GridCell.Tab.1.right" timestamp="1602966013089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1349" height="331" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601184511349" />
+    <state width="1865" height="313" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602966013089" />
     <state x="1244" y="447" key="ReplaceDuplicatesPrompt" timestamp="1601705634284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -245,10 +269,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602943219214" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601843737135">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602961319215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601843737135" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602961319215" />
     <state x="1138" y="222" width="665" height="619" key="extract.method.dialog" timestamp="1601705626639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,9 +285,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="230" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1601715441877" />
+    <state x="642" y="61" key="refactoring.ChangeSignatureDialog" timestamp="1602962877798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="642" y="61" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602962877798" />
     <state x="926" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1601494842455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="926" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601494842455" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geekbrain/market/utils/Cart.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestCartController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
