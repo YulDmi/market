@@ -20,4 +20,6 @@ public class Product {
 
     @Column(name = "cost")
     private Integer cost;
+
+
 }

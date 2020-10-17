@@ -2,15 +2,14 @@ package com.geekbrain.market.controllers;
 
 import com.geekbrain.market.entities.Product;
 import com.geekbrain.market.services.ProductService;
+import com.geekbrain.market.utils.ProductFilter;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
 @Controller
 @AllArgsConstructor
@@ -19,33 +18,32 @@ public class ProductController {
 
 
     @GetMapping("/products")
-    public String firstRequest(Model model, @RequestParam(defaultValue = "1", name = "p") Integer page) {
+    public String firstRequest(Model model,
+                               @RequestParam(defaultValue = "1", name = "p") Integer page,
+                               @RequestParam Map<String, String> params
+    ) {
         if (page <= 0) {
             page = 1;
         }
-        model.addAttribute("products", productService.findAll(page - 1, 5));
+        ProductFilter productFilter = new ProductFilter(params);
+        Page<Product> products = productService.findAll(productFilter.getSpec(), page - 1, 5);
+        model.addAttribute("products", products);
+        model.addAttribute("filterDefinition", productFilter.getFilterDefinition());
         return "products";
     }
 
-    @GetMapping("/products/{prefix}")
-    public String findMaxCost(Model model, @PathVariable String prefix) {
-        List<Product> products = new ArrayList<>();
-        if (prefix.equals("min")) {
-            products = productService.findByMinCostHQL();
-        }
-        if (prefix.equals("max")) {
-            products = productService.findByMaxCostHQL();
-        }
-        if (prefix.equals("min_max")) {
-            products = productService.findByMinCostHQL();
-            products.addAll(productService.findByMaxCostHQL());
-        }
-        if (products.isEmpty()) {
-            return "redirect:/products";
-        }
-        model.addAttribute("products", products);
-        return "Products";
+    @GetMapping("/change_product/{id}")
+    public String changeProduct(Model model, @PathVariable Long id) {
+       Product product = productService.findById(id).orElseThrow(() -> new ResourceNotFoundException("Не найден продукт с ID: " + id));
+        model.addAttribute("product", product);
+        return "product_change";
     }
 
+    @PostMapping("/add_change")
+    public String changeProduct(@ModelAttribute Product product) {
+
+        productService.saveOrUpdate(product);
+        return "redirect:/products";
+    }
 
 }
