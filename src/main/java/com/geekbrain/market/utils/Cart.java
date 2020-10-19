@@ -38,21 +38,10 @@ public class Cart {
                 return;
             }
         }
-        System.out.println("долвдплорд");
         Product p = productService.findById(productId).orElseThrow(() -> new ResourceNotFoundException("Unable to find product with id: " + productId + " (add to cart)"));
         items.add(new OrderItem(p));
         recalculate();
     }
-
-//    public void increment(Long id) {
-//        for (OrderItem o : items) {
-//            if (o.getProduct().getId().equals((id))) {
-//                o.incrementQuantity();
-//                recalculate();
-//                return;
-//            }
-//        }
-//    }
 
     public void decrement(Long productId) {
         for (OrderItem o : items) {
@@ -66,7 +55,6 @@ public class Cart {
                 return;
             }
         }
-       // recalculate();
     }
 
     public void remove(Long productId) {

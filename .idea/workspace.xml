@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/CartDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/OrderItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admin/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admin/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.js" afterDir="false" />
+    <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="lesson8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/utils/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/utils/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initialize.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/store/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/store/store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/market.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="lesson8" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,6 +72,9 @@
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\templates" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\store" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geekbrain.market.entities" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.geekbrain.market.entities" />
@@ -173,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602174792020</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lesson8">
+      <created>1602966329912</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602966329912</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,10 +191,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="lesson8" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1602945239173">
+    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1603125888190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602945239173" />
+    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603125888190" />
     <state x="1100" y="349" width="559" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601719125793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="306" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602962892798" />
-    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1602943201026">
+    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1602966443154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602943201026" />
+    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602966443154" />
     <state x="490" y="163" key="DBNavigator.ProjectSettingsDialog" timestamp="1602099749925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -221,22 +227,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1002" y="205" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600350943" />
-    <state width="1865" height="210" key="GridCell.Tab.0.bottom" timestamp="1602966298859">
+    <state width="1865" height="210" key="GridCell.Tab.0.bottom" timestamp="1603129121347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602966298859" />
-    <state width="1865" height="210" key="GridCell.Tab.0.center" timestamp="1602966298859">
+    <state width="1865" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603129121347" />
+    <state width="1865" height="210" key="GridCell.Tab.0.center" timestamp="1603129121347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602966298859" />
-    <state width="1865" height="210" key="GridCell.Tab.0.left" timestamp="1602966298858">
+    <state width="1865" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603129121347" />
+    <state width="1865" height="210" key="GridCell.Tab.0.left" timestamp="1603129121347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602966298858" />
-    <state width="1865" height="210" key="GridCell.Tab.0.right" timestamp="1602966298859">
+    <state width="1865" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603129121347" />
+    <state width="1865" height="210" key="GridCell.Tab.0.right" timestamp="1603129121347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602966298859" />
+    <state width="1865" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603129121347" />
     <state width="1865" height="313" key="GridCell.Tab.1.bottom" timestamp="1602966013089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,14 +271,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="84" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601711371470" />
-    <state x="598" y="179" key="Vcs.Push.Dialog.v2" timestamp="1602943219214">
+    <state x="598" y="179" key="Vcs.Push.Dialog.v2" timestamp="1602966332435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602943219214" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602961319215">
+    <state x="598" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602966332435" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603127738214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602961319215" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603127738214" />
     <state x="1138" y="222" width="665" height="619" key="extract.method.dialog" timestamp="1601705626639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,21 +299,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="926" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601494842455" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geekbrain/market/utils/Cart.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestCartController.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

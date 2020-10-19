@@ -2,7 +2,6 @@ package com.geekbrain.market.controllers;
 
 
 import com.geekbrain.market.dto.CartDto;
-import com.geekbrain.market.services.ProductService;
 import com.geekbrain.market.utils.Cart;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +18,6 @@ public class RestCartController {
 
     @GetMapping("/add/{product_id}")
     public void addToCart(@PathVariable(name = "product_id") Long productId) {
-        System.out.println(productId + "  " + productId.getClass());
         cart.add(productId);
     }
 
@@ -35,7 +33,6 @@ public class RestCartController {
 
     @GetMapping
     public CartDto getCartDto() {
-        System.out.println("sdkjgldkgjlfjhsflx");
         cart.recalculate();
         return new CartDto(cart);
     }
