@@ -34,6 +34,11 @@ public class ProductFilter {
             filterDefinitionBuilder.append("&max_price=").append(max_price);
         }
 
+        if (params.containsKey("categoryId") && params.get("categoryId") != null && !params.get("categoryId").isEmpty()) {
+            Long categoryId =Long.parseLong(params.get("categoryId"));
+            spec = spec.and(ProductSpecifications.categoryIdEquals(categoryId));
+            filterDefinitionBuilder.append("&categoryId=").append(categoryId);
+        }
         filterDefinition = filterDefinitionBuilder.toString();
     }
 

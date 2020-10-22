@@ -20,12 +20,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+//        http.authorizeRequests()
+////                .antMatchers("/orders/**").authenticated()
+////                .antMatchers("/orders/admin/**").hasRole("ADMIN")
+//                .anyRequest().permitAll()
+//                .and()
+//                .formLogin();
         http.authorizeRequests()
-                .antMatchers("/orders/**").authenticated()
-                .antMatchers("/orders/admin/**").hasRole("ADMIN")
+//                .antMatchers("/orders/**").authenticated()
                 .anyRequest().permitAll()
                 .and()
-                .formLogin();
+                .formLogin()
+                .and()
+                .csrf().disable();
+
     }
 
     @Bean

@@ -9,6 +9,7 @@ angular.module('app').controller('storeController', function ($scope, $http) {
                 name_product: $scope.filter ? $scope.filter.name_product : null,
                 min_price: $scope.filter ? $scope.filter.min_price : null,
                 max_price: $scope.filter ? $scope.filter.max_price : null,
+                categoryId: $scope.filter ? $scope.filter.categoryId : null,
                 p: pageIndex
             }
         })
@@ -35,7 +36,24 @@ angular.module('app').controller('storeController', function ($scope, $http) {
         }
         return arr;
     }
+$scope.categoryContentRequest = function () {
+        console.log('categories')
+            $http({
+                url: contextPath + '/api/v1/categories',
+                method: 'GET'
+            })
+                .then(function (response) {
+                    console.log(response.data);
+                    $scope.categories = response.data;
+                });
+        };
 
+        $scope.clear = function(){
+        $scope.filter = null;
+        $scope.fillTable();
+        };
+
+     $scope.categoryContentRequest();
     $scope.fillTable();
 });
 
