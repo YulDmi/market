@@ -3,27 +3,28 @@ package com.geekbrain.market.controllers;
 import com.geekbrain.market.dto.ProductDto;
 import com.geekbrain.market.entities.Category;
 import com.geekbrain.market.entities.Product;
+import com.geekbrain.market.exeptions.ResourceNotFoundException;
 import com.geekbrain.market.services.CategoryService;
 import com.geekbrain.market.services.ProductService;
 import com.geekbrain.market.utils.ProductFilter;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1/products")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class RestProductController {
-    private ProductService productService;
-    private CategoryService categoryService;
+    private final  ProductService productService;
+    private final CategoryService categoryService;
 
 
     @GetMapping
@@ -36,24 +37,15 @@ public class RestProductController {
 
         ProductFilter productFilter = new ProductFilter(params);
         Page<Product> content = productService.findAll(productFilter.getSpec(), page - 1, 5);
-        Pageable pageable = PageRequest.of(page - 1, 5);
         List<ProductDto> list = content.getContent().stream().map(ProductDto::new).collect(Collectors.toList());
-        Page<ProductDto> productDtos = new PageImpl<ProductDto>(list, pageable, content.getTotalElements());
-        return productDtos;
+        Page<ProductDto> out = new PageImpl<ProductDto>(list, content.getPageable(), content.getTotalElements());
+        return out;
     }
 
     @GetMapping("/{id}")
     public Product getProductById(@PathVariable Long id) {
-        return productService.findById(id).get();
+        return productService.findById(id).orElseThrow(() -> new ResourceNotFoundException("Unable to find product with id: " + id));
     }
-
-//    @PostMapping
-//    public Product createProduct(@RequestBody Product p) {
-//        System.out.println("createProduct "+p.toString());
-//        p.setId(null);
-//        return productService.saveOrUpdate(p);
-//    }
-//@GetMapping("/create")
 
 @PostMapping
 public ProductDto createProduct(
@@ -61,9 +53,6 @@ public ProductDto createProduct(
         @RequestParam Long categoryId,
         @RequestParam Integer cost
         ) {
-    System.out.println("createProduct "+ name);
-    System.out.println("createProduct "+ categoryId);
-    System.out.println("createProduct "+ cost);
     Product p = new Product();
     p.setName(name);
     Category category = categoryService.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("Not category byID : " + categoryId));
@@ -74,14 +63,6 @@ public ProductDto createProduct(
 
     return new ProductDto(p);
 }
-
-//    @PostMapping
-//    public ProductDto createProduct(@RequestBody ProductDto p) {
-//        System.out.println("createProduct "+ p);
-//        p.setId(null);
-//        return p;
-//    }
-
 
     @PutMapping
     public Product updateProduct(@RequestBody Product p) {

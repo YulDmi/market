@@ -1,6 +1,6 @@
 package com.geekbrain.market.utils;
 
-import com.geekbrain.market.controllers.ResourceNotFoundException;
+import com.geekbrain.market.exeptions.ResourceNotFoundException;
 import com.geekbrain.market.entities.OrderItem;
 import com.geekbrain.market.entities.Product;
 import com.geekbrain.market.services.ProductService;
