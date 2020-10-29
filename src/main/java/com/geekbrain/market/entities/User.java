@@ -4,6 +4,8 @@ package com.geekbrain.market.entities;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
@@ -28,5 +30,9 @@ public class User {
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Collection<Role> roles;
+    private Collection<Role> roles ;
+
+
+
+
 }
