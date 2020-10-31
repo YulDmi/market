@@ -2,6 +2,7 @@ angular.module('app').controller('storeController', function ($scope, $http) {
     const contextPath = 'http://localhost:8189/market';
 
     $scope.fillTable = function (pageIndex = 1) {
+    console.log('fillTable')
         $http({
             url: contextPath + '/api/v1/products',
             method: 'GET',

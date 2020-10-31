@@ -1,6 +1,7 @@
 package com.geekbrain.market.controllers;
 
 import com.geekbrain.market.entities.Product;
+import com.geekbrain.market.exeptions.ResourceNotFoundException;
 import com.geekbrain.market.services.ProductService;
 import com.geekbrain.market.utils.ProductFilter;
 import lombok.AllArgsConstructor;
