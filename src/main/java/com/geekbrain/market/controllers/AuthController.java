@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
@@ -50,17 +51,16 @@ public class AuthController {
 
     @PostMapping("/reg")
     public ResponseEntity<?> createNewUser(@RequestBody User user) {
-        User user1 = userService.findByUsername(user.getUsername());
-        if (user1 == null) {
-            String password = bc.encode(user.getPassword());
-            user.setPassword(password);
-            List<Role> roles = new ArrayList<>();
-            roles.add(roleService.findByName("ROLE_USER"));
-            user.setRoles(roles);
-            userService.save(user);
-            return ResponseEntity.ok(user);
-        } else {
-                return new ResponseEntity<>(new MarketError(HttpStatus.UNAUTHORIZED.value(), "Пользователь с таким именем уже существует. Войдите или зарегистрируйтесь новым именем"), HttpStatus.UNAUTHORIZED);
+
+        if (userService.findByUsername(user.getUsername()).isPresent()) {
+            new ResponseEntity<>(new MarketError(HttpStatus.UNAUTHORIZED.value(), "Пользователь с таким именем уже существует. Войдите или зарегистрируйтесь новым именем"), HttpStatus.UNAUTHORIZED);
         }
+
+        List<Role> roles = new ArrayList<>();
+        roles.add(roleService.findByName("ROLE_USER"));
+        user.setRoles(roles);
+        user.setPassword(bc.encode(user.getPassword()));
+        userService.save(user);
+        return ResponseEntity.ok(user);
     }
 }

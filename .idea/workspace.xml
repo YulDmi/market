@@ -2,27 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/reg/reg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/reg/reg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/auth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/RoleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/CartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/OrderService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/cart/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/cart/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson2_1" />
+        <entry key="$PROJECT_DIR$" value="lesson2_2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,11 +74,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\store" />
-      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static" />
-      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources" />
-      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\db\migration" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.geekbrain.market.entities" />
+      <recent name="com.geekbrain.market.repositories" />
+      <recent name="com.geekbrain.market.services" />
+      <recent name="com.geekbrain.market.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\admin" />
@@ -87,11 +92,11 @@
       <recent name="com.geekbrain.market.services" />
       <recent name="com.geekbrain.market.entities" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.geekbrain.market.entities" />
-      <recent name="com.geekbrain.market.repositories" />
-      <recent name="com.geekbrain.market.services" />
-      <recent name="com.geekbrain.market.controllers" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\store" />
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static" />
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources" />
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\db\migration" />
     </key>
   </component>
   <component name="RunManager">
@@ -218,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603559225436</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="lesson2_2_2">
+      <created>1603994156929</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603994156929</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,13 +254,14 @@
     <MESSAGE value="lesson2_1_2" />
     <MESSAGE value="lesson2_1_3" />
     <MESSAGE value="lesson2_2_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2_2_1" />
+    <MESSAGE value="lesson2_2_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson2_2_2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1603125888190">
+    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1604130358340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603125888190" />
+    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604130358340" />
     <state x="1100" y="349" width="559" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601719125793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,10 +278,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603610811644" />
-    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1603559221693">
+    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1603994149603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603559221693" />
+    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603994149603" />
     <state x="490" y="163" key="DBNavigator.ProjectSettingsDialog" timestamp="1602099749925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -289,38 +302,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1002" y="205" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600350943" />
-    <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1603635085395">
+    <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1604138995367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603635085395" />
-    <state width="1865" height="224" key="GridCell.Tab.0.center" timestamp="1603635085395">
+    <state width="1865" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604138995367" />
+    <state width="1865" height="224" key="GridCell.Tab.0.center" timestamp="1604138995367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603635085395" />
-    <state width="1865" height="224" key="GridCell.Tab.0.left" timestamp="1603635085395">
+    <state width="1865" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604138995367" />
+    <state width="1865" height="224" key="GridCell.Tab.0.left" timestamp="1604138995367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603635085395" />
-    <state width="1865" height="224" key="GridCell.Tab.0.right" timestamp="1603635085395">
+    <state width="1865" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604138995367" />
+    <state width="1865" height="224" key="GridCell.Tab.0.right" timestamp="1604138995367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603635085395" />
-    <state width="930" height="303" key="GridCell.Tab.1.bottom" timestamp="1603524730596">
+    <state width="1865" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604138995367" />
+    <state width="1865" height="312" key="GridCell.Tab.1.bottom" timestamp="1604138931481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="930" height="303" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603524730596" />
-    <state width="930" height="303" key="GridCell.Tab.1.center" timestamp="1603524730596">
+    <state width="1865" height="312" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604138931481" />
+    <state width="1865" height="312" key="GridCell.Tab.1.center" timestamp="1604138931481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="930" height="303" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603524730596" />
-    <state width="930" height="303" key="GridCell.Tab.1.left" timestamp="1603524730596">
+    <state width="1865" height="312" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604138931481" />
+    <state width="1865" height="312" key="GridCell.Tab.1.left" timestamp="1604138931481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="930" height="303" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603524730596" />
-    <state width="930" height="303" key="GridCell.Tab.1.right" timestamp="1603524730596">
+    <state width="1865" height="312" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604138931481" />
+    <state width="1865" height="312" key="GridCell.Tab.1.right" timestamp="1604138931481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="930" height="303" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603524730596" />
+    <state width="1865" height="312" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604138931481" />
     <state x="1244" y="447" key="ReplaceDuplicatesPrompt" timestamp="1601705634284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -333,14 +346,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="84" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601711371470" />
-    <state x="598" y="179" key="Vcs.Push.Dialog.v2" timestamp="1603391979850">
+    <state x="598" y="179" key="Vcs.Push.Dialog.v2" timestamp="1603994169245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603391979850" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603543519892">
+    <state x="598" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603994169245" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604135264786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603543519892" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604135264786" />
     <state x="1138" y="222" width="665" height="619" key="extract.method.dialog" timestamp="1601705626639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

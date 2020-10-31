@@ -16,7 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-  //  private UserService userService;
+    //  private UserService userService;
     private final JwtRequestFilter jwtRequestFilter;
 
 //    @Autowired
@@ -40,16 +40,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .and()
 //                .csrf().disable();
         http.authorizeRequests()
-               .antMatchers("/api/v1/**").authenticated()
+                .antMatchers("/api/v1/**").authenticated()
 //                .antMatchers("/cart/**").authenticated()
 //                .antMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().permitAll()
                 .and()
                 .csrf().disable()
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .headers().frameOptions().disable();
+
         http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 
     }
+
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
