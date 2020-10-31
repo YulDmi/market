@@ -28,19 +28,6 @@ public class JwtTokenUtil {
         return getClaimFromToken(token, Claims::getSubject);
     }
 
-//    private Date getExpirationDateFromToken(String token) {
-//        return getClaimFromToken(token, Claims::getExpiration);
-//    }
-//
-//    public boolean validateToken(String token) {
-//        return !isTokenExpired(token);
-//    }
-//
-//    public boolean validateToken(String token, UserDetails userDetails) {
-//        String username = getUsernameFromToken(token);
-//        return Objects.equals(username, userDetails.getUsername()) && !isTokenExpired(token);
-//    }
-
     public String generateToken(UserDetails userDetails) {
         Map<String, Object> claims = new HashMap<>();
         List<String> rolesList = userDetails.getAuthorities().stream()
@@ -52,7 +39,7 @@ public class JwtTokenUtil {
 
     private String doGenerateToken(Map<String, Object> claims, String subject) {
         Date issuedDate = new Date();
-        Date expiredDate = new Date(issuedDate.getTime() + 60 * 60 * 1000); // todo
+        Date expiredDate = new Date(issuedDate.getTime() + 60 * 60 * 1000);
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(subject)
@@ -70,9 +57,6 @@ public class JwtTokenUtil {
     }
 
     public List<String> getRoles(String token) {
-        List<String > c = getClaimFromToken(token,(Function<Claims, List<String>>) claims -> claims.get("roles", List.class));
-        System.out.println(c.size());
-  //      return getClaimFromToken(token, (Function<Claims, List<String>>) claims -> claims.get("roles", List.class));
-return c;
+        return getClaimFromToken(token,(Function<Claims, List<String>>) claims -> claims.get("roles", List.class));
     }
 }

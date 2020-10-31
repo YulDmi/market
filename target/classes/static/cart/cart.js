@@ -56,7 +56,8 @@ angular.module('app').controller('cartController', function ($scope, $http) {
             })
                 .then(function (response) {
                     $scope.order = response.data;
-                  window.alert("Ваш заказ успешно оформлен")
+                  window.alert("Ваш заказ успешно оформлен");
+                  $scope.cartContentRequest();
                 });
         };
 

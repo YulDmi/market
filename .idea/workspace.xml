@@ -7,27 +7,33 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/JwtTokenUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/configs/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/CartController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initialize.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/reg/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/reg/reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/reg/reg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orders.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orders_adm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/product_change.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/CartController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/OrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/cart/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/orders.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/orders_adm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/product_change.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/products.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +44,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -230,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603994156929</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lesson2_3_1 исправила регистрацию и формирование заказа">
+      <created>1604139606977</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604139606977</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,7 +251,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -255,7 +270,8 @@
     <MESSAGE value="lesson2_1_3" />
     <MESSAGE value="lesson2_2_1" />
     <MESSAGE value="lesson2_2_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2_2_2" />
+    <MESSAGE value="lesson2_3_1 исправила регистрацию и формирование заказа" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson2_3_1 исправила регистрацию и формирование заказа" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1604130358340">
@@ -278,10 +294,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603610811644" />
-    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1603994149603">
+    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1604139597427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603994149603" />
+    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604139597427" />
     <state x="490" y="163" key="DBNavigator.ProjectSettingsDialog" timestamp="1602099749925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -302,38 +318,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1002" y="205" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600350943" />
-    <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1604138995367">
+    <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1604145671181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604138995367" />
-    <state width="1865" height="224" key="GridCell.Tab.0.center" timestamp="1604138995367">
+    <state width="1865" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604145671181" />
+    <state width="1865" height="224" key="GridCell.Tab.0.center" timestamp="1604145671181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604138995367" />
-    <state width="1865" height="224" key="GridCell.Tab.0.left" timestamp="1604138995367">
+    <state width="1865" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604145671181" />
+    <state width="1865" height="224" key="GridCell.Tab.0.left" timestamp="1604145671180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604138995367" />
-    <state width="1865" height="224" key="GridCell.Tab.0.right" timestamp="1604138995367">
+    <state width="1865" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604145671180" />
+    <state width="1865" height="224" key="GridCell.Tab.0.right" timestamp="1604145671181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604138995367" />
-    <state width="1865" height="312" key="GridCell.Tab.1.bottom" timestamp="1604138931481">
+    <state width="1865" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604145671181" />
+    <state width="1865" height="312" key="GridCell.Tab.1.bottom" timestamp="1604141888692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="312" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604138931481" />
-    <state width="1865" height="312" key="GridCell.Tab.1.center" timestamp="1604138931481">
+    <state width="1865" height="312" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604141888692" />
+    <state width="1865" height="312" key="GridCell.Tab.1.center" timestamp="1604141888692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="312" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604138931481" />
-    <state width="1865" height="312" key="GridCell.Tab.1.left" timestamp="1604138931481">
+    <state width="1865" height="312" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604141888692" />
+    <state width="1865" height="312" key="GridCell.Tab.1.left" timestamp="1604141888691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="312" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604138931481" />
-    <state width="1865" height="312" key="GridCell.Tab.1.right" timestamp="1604138931481">
+    <state width="1865" height="312" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604141888691" />
+    <state width="1865" height="312" key="GridCell.Tab.1.right" timestamp="1604141888692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="312" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604138931481" />
+    <state width="1865" height="312" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604141888692" />
     <state x="1244" y="447" key="ReplaceDuplicatesPrompt" timestamp="1601705634284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -350,10 +366,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603994169245" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604135264786">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604142692844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604135264786" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604142692844" />
+    <state x="738" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604151568758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604151568758" />
     <state x="1138" y="222" width="665" height="619" key="extract.method.dialog" timestamp="1601705626639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

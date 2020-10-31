@@ -51,11 +51,9 @@ public class AuthController {
 
     @PostMapping("/reg")
     public ResponseEntity<?> createNewUser(@RequestBody User user) {
-
         if (userService.findByUsername(user.getUsername()).isPresent()) {
             new ResponseEntity<>(new MarketError(HttpStatus.UNAUTHORIZED.value(), "Пользователь с таким именем уже существует. Войдите или зарегистрируйтесь новым именем"), HttpStatus.UNAUTHORIZED);
         }
-
         List<Role> roles = new ArrayList<>();
         roles.add(roleService.findByName("ROLE_USER"));
         user.setRoles(roles);

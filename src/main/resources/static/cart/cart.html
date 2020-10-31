@@ -8,14 +8,12 @@
             <td>Удалить</td>
         </tr>
         <tbody>
-
         <tr ng-repeat="oi in cart.items">
             <td>{{oi.productTitle}}</td>
             <td>
                 <button class="btn btn-link" ng-click="decrementItem(oi.productId)">-</button>
                 {{oi.quantity}}
                 <button class="btn btn-link" ng-click="incrementItem(oi.productId)">+</button>
-
             </td>
             <td>{{oi.pricePerProduct + ' * ' + oi.quantity + ' = ' + oi.price}} </td>
             <td>
@@ -42,9 +40,5 @@
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Оформить</button>
             </div>
         </form>
-
-<!--        <div ng-if="isUserLoggedIn()">-->
-<!--            <button class="btn btn-outline-secondary" ng-click="tryToLogout()">Выйти</button>-->
-<!--        </div>-->
     </div>
 </div>

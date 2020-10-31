@@ -18,14 +18,6 @@ $scope.submitCreateNewProduct = function () {
             });
     };
 
-//    $scope.submitCreateNewProduct = function () {
-//        $http.post(contextPath + '/api/v1/products', $scope.newProduct)
-//            .then(function (response) {
-//                $scope.newProduct = null;
-//                alert('Добавлен новый продукт');
-//            });
-//    };
-
      $scope.categoryContentRequest = function () {
         console.log('categories')
             $http({
