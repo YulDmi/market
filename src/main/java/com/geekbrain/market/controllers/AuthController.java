@@ -4,10 +4,8 @@ package com.geekbrain.market.controllers;
 import com.geekbrain.market.configs.JwtTokenUtil;
 import com.geekbrain.market.configs.jwt.JwtRequest;
 import com.geekbrain.market.configs.jwt.JwtResponse;
-import com.geekbrain.market.entities.Role;
 import com.geekbrain.market.entities.User;
 import com.geekbrain.market.exeptions.MarketError;
-import com.geekbrain.market.exeptions.ResourceNotFoundException;
 import com.geekbrain.market.services.RoleService;
 import com.geekbrain.market.services.UserService;
 import lombok.RequiredArgsConstructor;
@@ -21,10 +19,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
@@ -54,9 +48,7 @@ public class AuthController {
         if (userService.findByUsername(user.getUsername()).isPresent()) {
             new ResponseEntity<>(new MarketError(HttpStatus.UNAUTHORIZED.value(), "Пользователь с таким именем уже существует. Войдите или зарегистрируйтесь новым именем"), HttpStatus.UNAUTHORIZED);
         }
-        List<Role> roles = new ArrayList<>();
-        roles.add(roleService.findByName("ROLE_USER"));
-        user.setRoles(roles);
+        user.setRoles(roleService.getRoleUser());
         user.setPassword(bc.encode(user.getPassword()));
         userService.save(user);
         return ResponseEntity.ok(user);

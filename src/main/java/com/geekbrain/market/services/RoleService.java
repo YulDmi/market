@@ -5,6 +5,7 @@ import com.geekbrain.market.repositories.RoleRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,6 +13,20 @@ import java.util.Optional;
 @AllArgsConstructor
 public class RoleService {
     private RoleRepository roleRepository;
+    private List<Role> roles;
+
+
+    public List<Role> getRoleUser() {
+        roles = new ArrayList<>();
+        roles.add(findByName("ROLE_USER"));
+        return roles;
+    }
+
+    public List<Role> addRole(String name) {
+        roles = getRoleUser();
+        roles.add(findByName("ROLE_" + name));
+        return roles;
+    }
 
     public List<Role> findAll() {
         return roleRepository.findAll();
@@ -35,4 +50,5 @@ public class RoleService {
     public void deleteById(Long id) {
         roleRepository.deleteById(id);
     }
-}
+
+   }
