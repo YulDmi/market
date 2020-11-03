@@ -4,6 +4,7 @@ package com.geekbrain.market.controllers;
 import com.geekbrain.market.configs.JwtTokenUtil;
 import com.geekbrain.market.configs.jwt.JwtRequest;
 import com.geekbrain.market.configs.jwt.JwtResponse;
+import com.geekbrain.market.entities.DetailsUser;
 import com.geekbrain.market.entities.User;
 import com.geekbrain.market.exeptions.MarketError;
 import com.geekbrain.market.services.RoleService;
@@ -50,6 +51,7 @@ public class AuthController {
         }
         user.setRoles(roleService.getRoleUser());
         user.setPassword(bc.encode(user.getPassword()));
+        userService.setDetailsUser(user);
         userService.save(user);
         return ResponseEntity.ok(user);
     }
