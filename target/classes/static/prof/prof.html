@@ -1,0 +1,56 @@
+<div class="mb-3 text-center">
+<br>
+<br>
+    <form class="needs-validation" ng-submit = "updateUser()" novalidate>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="username" value="{{user.username}}">Username</label>
+                <input type="text" class="form-control" id="username" ng-model = "user.username" readonly>
+                <label for="firstname" value="{{user.firstname}}">First name</label>
+                <input type="text" class="form-control" id="firstname" ng-model = "user.firstname" required>
+                <label for="address" value="{{user.address}}">Address</label>
+                <input type="text" class="form-control" id="address"  ng-model = "user.address" required>
+                <label for="year" value="{{user.year}}">Year</label>
+                <input type="number" class="form-control" id="year"  ng-model = "user.year" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02" value="{{user.email}}">email</label>
+                <input type="text" class="form-control" id="validationCustom02"  ng-model = "user.email" required>
+                <label for="validationCustom001" value="{{user.lastname}}">Last name</label>
+                <input type="text" class="form-control" id="validationCustom001"  ng-model = "user.lastname" required>
+                <label for="validationCustom05" value="{{user.phone}}">Phone</label>
+                <input type="text" class="form-control" id="validationCustom05"    ng-model = "user.phone" required>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Sex</label>
+                    <select class="form-control" id="exampleFormControlSelect1" value="{{user.sex}}" ng-model = "user.sex">
+                        <option >male</option>
+                        <option >female</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-primary" type="submit">Сохранить изменения</button>
+    </form>
+
+    <h3>Мои заказы</h3>
+    <table class="table table-hover" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>Название</td>
+            <td>Сумма заказа</td>
+            <td>Адрес доставки</td>
+            <td></td>
+        </tr>
+        <tbody>
+
+        <tr ng-repeat="o in Orders">
+            <td >{{p.Orders.productTitle}}</td>
+            <td>{{o.price}}</td>
+            <td>{{o.address}}</td>
+            <td>
+<!--                <button class="btn btn-success" ng-click = "addToCart(p.id)">в корзину</button>-->
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

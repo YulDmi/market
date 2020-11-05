@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initialize.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/cart/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/ProductFilterDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/dto/ProductFilterDto.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604235649328</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="lesson2_3_3">
+      <created>1604421271122</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1604421271122</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,10 +288,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603610811644" />
-    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1604235642042">
+    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1604421265502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604235642042" />
+    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604421265502" />
     <state x="490" y="163" key="DBNavigator.ProjectSettingsDialog" timestamp="1602099749925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -315,22 +312,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1002" y="205" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600350943" />
-    <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1604420895385">
+    <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1604478401080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604420895385" />
-    <state width="1865" height="224" key="GridCell.Tab.0.center" timestamp="1604420895385">
+    <state width="1865" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604478401080" />
+    <state width="1865" height="224" key="GridCell.Tab.0.center" timestamp="1604478401079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604420895385" />
-    <state width="1865" height="224" key="GridCell.Tab.0.left" timestamp="1604420895384">
+    <state width="1865" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604478401079" />
+    <state width="1865" height="224" key="GridCell.Tab.0.left" timestamp="1604478401079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604420895384" />
-    <state width="1865" height="224" key="GridCell.Tab.0.right" timestamp="1604420895385">
+    <state width="1865" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604478401079" />
+    <state width="1865" height="224" key="GridCell.Tab.0.right" timestamp="1604478401079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604420895385" />
+    <state width="1865" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604478401079" />
     <state width="1865" height="312" key="GridCell.Tab.1.bottom" timestamp="1604141888692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
