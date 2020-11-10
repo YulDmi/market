@@ -4,10 +4,9 @@ package com.geekbrain.market.controllers;
 import com.geekbrain.market.configs.JwtTokenUtil;
 import com.geekbrain.market.configs.jwt.JwtRequest;
 import com.geekbrain.market.configs.jwt.JwtResponse;
-import com.geekbrain.market.entities.Role;
+import com.geekbrain.market.entities.DetailsUser;
 import com.geekbrain.market.entities.User;
 import com.geekbrain.market.exeptions.MarketError;
-import com.geekbrain.market.exeptions.ResourceNotFoundException;
 import com.geekbrain.market.services.RoleService;
 import com.geekbrain.market.services.UserService;
 import lombok.RequiredArgsConstructor;
@@ -21,9 +20,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -50,17 +46,13 @@ public class AuthController {
 
     @PostMapping("/reg")
     public ResponseEntity<?> createNewUser(@RequestBody User user) {
-        User user1 = userService.findByUsername(user.getUsername());
-        if (user1 == null) {
-            String password = bc.encode(user.getPassword());
-            user.setPassword(password);
-            List<Role> roles = new ArrayList<>();
-            roles.add(roleService.findByName("ROLE_USER"));
-            user.setRoles(roles);
-            userService.save(user);
-            return ResponseEntity.ok(user);
-        } else {
-                return new ResponseEntity<>(new MarketError(HttpStatus.UNAUTHORIZED.value(), "Пользователь с таким именем уже существует. Войдите или зарегистрируйтесь новым именем"), HttpStatus.UNAUTHORIZED);
+        if (userService.findByUsername(user.getUsername()).isPresent()) {
+            new ResponseEntity<>(new MarketError(HttpStatus.UNAUTHORIZED.value(), "Пользователь с таким именем уже существует. Войдите или зарегистрируйтесь новым именем"), HttpStatus.UNAUTHORIZED);
         }
+        user.setRoles(roleService.getRoleUser());
+        user.setPassword(bc.encode(user.getPassword()));
+        userService.setDetailsUser(user);
+        userService.save(user);
+        return ResponseEntity.ok(user);
     }
 }

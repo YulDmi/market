@@ -16,7 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-  //  private UserService userService;
+    //  private UserService userService;
     private final JwtRequestFilter jwtRequestFilter;
 
 //    @Autowired
@@ -26,30 +26,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-//        http.authorizeRequests()
-////                .antMatchers("/orders/**").authenticated()
-////                .antMatchers("/orders/admin/**").hasRole("ADMIN")
-//                .anyRequest().permitAll()
-//                .and()
-//                .formLogin();
-//        http.authorizeRequests()
-////                .antMatchers("/orders/**").authenticated()
-//                .anyRequest().permitAll()
-//                .and()
-//                .formLogin()
-//                .and()
-//                .csrf().disable();
         http.authorizeRequests()
-               .antMatchers("/api/v1/**").authenticated()
+                .antMatchers("/api/v1/**").authenticated()
 //                .antMatchers("/cart/**").authenticated()
 //                .antMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().permitAll()
                 .and()
                 .csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+//                .and()
+//                .headers().frameOptions().disable();
+
         http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 
     }
+
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -60,17 +51,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
-
-//    @Bean
-//    public BCryptPasswordEncoder passwordEncoder() {
-//        return new BCryptPasswordEncoder();
-//    }
-//
-//    @Bean
-//    public DaoAuthenticationProvider daoAuthenticationProvider() {
-//        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
-//        authenticationProvider.setPasswordEncoder(passwordEncoder());
-//        authenticationProvider.setUserDetailsService(userService);
-//        return authenticationProvider;
-//    }
 }

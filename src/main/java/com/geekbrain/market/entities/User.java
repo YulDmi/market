@@ -2,10 +2,9 @@ package com.geekbrain.market.entities;
 
 
 import lombok.Data;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
@@ -32,7 +31,9 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Collection<Role> roles ;
 
-
-
+    @OneToOne
+    @JoinColumn(name = "details_id")
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    private DetailsUser details;
 
 }

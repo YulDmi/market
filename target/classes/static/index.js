@@ -24,6 +24,10 @@
                            templateUrl: 'cart/cart.html',
                            controller: 'cartController'
            })
+           .when('/prof', {
+                                      templateUrl: 'prof/prof.html',
+                                      controller: 'profController'
+           })
            .when('/store', {
                            templateUrl: 'store/store.html',
                            controller: 'storeController'
