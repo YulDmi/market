@@ -4,7 +4,7 @@ angular.module('app').controller('profController', function ($scope, $http) {
     $scope.userContentRequest = function () {
             console.log('user')
                 $http({
-                    url: contextPath + '/api/v1/user',
+                    url: contextPath + '/api/v1/profiles',
                     method: 'GET'
                 })
                     .then(function (response) {
@@ -14,7 +14,7 @@ angular.module('app').controller('profController', function ($scope, $http) {
             };
         $scope.updateUser = function () {
              console.log('updateUser')
-                 $http.post(contextPath + '/api/v1/user', $scope.user)
+                 $http.post(contextPath + '/api/v1/profiles', $scope.user)
                      .then(function (response) {
                          $scope.user = response.data;
                          window.alert("Изменения сохранены");

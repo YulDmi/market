@@ -21,10 +21,6 @@ public class ProductService {
         return productRepository.findAll(spec, PageRequest.of(page, size));
     }
 
-//    public List<Product> findAll(Specification<Product> spec){
-//        return productRepository.findAll(spec);
-//    }
-
     public Optional<Product> findById(Long id) {
         return productRepository.findById(id);
     }

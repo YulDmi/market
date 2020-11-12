@@ -4,9 +4,9 @@ package com.geekbrain.market.controllers;
 import com.geekbrain.market.configs.JwtTokenUtil;
 import com.geekbrain.market.configs.jwt.JwtRequest;
 import com.geekbrain.market.configs.jwt.JwtResponse;
-import com.geekbrain.market.entities.DetailsUser;
 import com.geekbrain.market.entities.User;
 import com.geekbrain.market.exeptions.MarketError;
+import com.geekbrain.market.services.DetailsUserService;
 import com.geekbrain.market.services.RoleService;
 import com.geekbrain.market.services.UserService;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AuthController {
     private final UserService userService;
+    private final DetailsUserService detailsUserService;
     private final RoleService roleService;
     private final JwtTokenUtil jwtTokenUtil;
     private final AuthenticationManager authenticationManager;
@@ -51,8 +52,8 @@ public class AuthController {
         }
         user.setRoles(roleService.getRoleUser());
         user.setPassword(bc.encode(user.getPassword()));
-        userService.setDetailsUser(user);
-        userService.save(user);
+
+        detailsUserService.setDetailsUser(userService.save(user));
         return ResponseEntity.ok(user);
     }
 }

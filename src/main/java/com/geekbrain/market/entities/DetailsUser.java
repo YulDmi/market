@@ -32,7 +32,8 @@ public class DetailsUser {
     @Column(name = "sex")
     private String sex ;
 
-    @OneToOne(mappedBy = "details")
-    User user;
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     }

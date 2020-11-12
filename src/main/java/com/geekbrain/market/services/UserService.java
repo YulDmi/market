@@ -1,10 +1,8 @@
 package com.geekbrain.market.services;
 
-import com.geekbrain.market.dto.UserDto;
 import com.geekbrain.market.entities.DetailsUser;
 import com.geekbrain.market.entities.Role;
 import com.geekbrain.market.entities.User;
-import com.geekbrain.market.exeptions.ResourceNotFoundException;
 import com.geekbrain.market.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -15,9 +13,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -54,7 +50,7 @@ public class UserService implements UserDetailsService {
         return userRepository.findById(id);
     }
 
-    public void setDetailsUser(User user) {
+    public void setDetailsUser() {
         DetailsUser detailsUser = new DetailsUser();
         detailsUser.setAddress("");
         detailsUser.setLastname("");
@@ -62,20 +58,7 @@ public class UserService implements UserDetailsService {
         detailsUser.setPhone("");
         detailsUser.setYear(2000);
         detailsUser.setSex("male");
-        user.setDetails(detailsUser);
-    }
 
-    public User setDetailsUser(UserDto userDto){
-        User user = userRepository.findById(userDto.getId()).orElseThrow(() -> new ResourceNotFoundException("не найден пользователь с Id :" + userDto.getId()));
-        DetailsUser detailsUser = new DetailsUser();
-        detailsUser.setAddress(userDto.getAddress());
-        detailsUser.setLastname(userDto.getLastname());
-        detailsUser.setFirstname(userDto.getFirstname());
-        detailsUser.setPhone(userDto.getPhone());
-        detailsUser.setYear(userDto.getYear());
-        detailsUser.setSex(userDto.getSex());
-        user.setDetails(detailsUser);
-        return user;
     }
 
 }
