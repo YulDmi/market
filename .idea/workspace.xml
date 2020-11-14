@@ -2,33 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/DetailsUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/market.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/market.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestUserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/DetailsUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/DetailsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/DetailsUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/repositories/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initialize.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/prof/prof.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/prof/prof.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/RestUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/dto/UserDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/DetailsUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/DetailsUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/CustomerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/prof/prof.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/prof/prof.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/prof/prof.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/prof/prof.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/market.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/MarketApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/JwtRequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/JwtTokenUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/jwt/JwtRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/configs/jwt/JwtResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/RestCartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/RestCategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/RestOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/controllers/RestProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/dto/CartDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/dto/CategoryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/dto/OrderDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/dto/OrderItemDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/dto/ProductDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/DetailsUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/entities/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/exeptions/ExceptionControllerAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/exeptions/MarketError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/exeptions/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/CategoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/repositories/specification/ProductSpecifications.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/utils/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geekbrain/market/utils/ProductFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__initialize.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flyway.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth/auth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/cart/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/cart/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/prof/prof.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/prof/prof.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/reg/reg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/reg/reg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/store/store.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/store/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/geekbrain/market/MarketApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +108,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/geekbrain/market/soap" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -82,10 +119,14 @@
       <recent name="com.geekbrain.market.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\java\com\geekbrain\market\soap" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\admin" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\templates" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static\store" />
       <recent name="C:\Users\ASUS\IdeaProjects\market\src\main\resources\static" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.geekbrain.market" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.geekbrain.market.controllers" />
@@ -267,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604593305350</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="lesson2_4 исправления в дз">
+      <created>1605210263857</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1605210263857</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,17 +346,26 @@
     <MESSAGE value="lesson2_3_2 исправила регистрацию и формирование заказа" />
     <MESSAGE value="lesson2_3_3" />
     <MESSAGE value="lesson2_3_3_дз" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2_3_3_дз" />
+    <MESSAGE value="lesson2_4 исправления в дз" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson2_4 исправления в дз" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1604240082565">
+    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1605373545429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604240082565" />
+    <state x="1108" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605373545429" />
+    <state x="527" y="426" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605372904168">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="527" y="426" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605372904168" />
     <state x="1100" y="349" width="559" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604152086854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1100" y="349" width="559" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1604152086854" />
+    <state x="726" y="374" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1605372905915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="374" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1605372905915" />
     <state x="743" y="306" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1605207039279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -317,14 +374,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="555" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605207064256" />
-    <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603610811644">
+    <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605376463474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603610811644" />
-    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1605210208833">
+    <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605376463474" />
+    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1605210257155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605210208833" />
+    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605210257155" />
     <state x="490" y="163" key="DBNavigator.ProjectSettingsDialog" timestamp="1602099749925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -345,22 +402,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1002" y="205" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600350943" />
-    <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1605209935966">
+    <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1605378469178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605209935966" />
-    <state width="1865" height="224" key="GridCell.Tab.0.center" timestamp="1605209935965">
+    <state width="1865" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605378469178" />
+    <state width="1865" height="224" key="GridCell.Tab.0.center" timestamp="1605378469178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605209935965" />
-    <state width="1865" height="224" key="GridCell.Tab.0.left" timestamp="1605209935965">
+    <state width="1865" height="224" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605378469178" />
+    <state width="1865" height="224" key="GridCell.Tab.0.left" timestamp="1605378469177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605209935965" />
-    <state width="1865" height="224" key="GridCell.Tab.0.right" timestamp="1605209935966">
+    <state width="1865" height="224" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605378469177" />
+    <state width="1865" height="224" key="GridCell.Tab.0.right" timestamp="1605378469178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605209935966" />
+    <state width="1865" height="224" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605378469178" />
     <state width="1865" height="312" key="GridCell.Tab.1.bottom" timestamp="1604141888692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
