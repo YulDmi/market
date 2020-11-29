@@ -2,6 +2,7 @@ package com.geekbrain.market.services;
 
 import com.geekbrain.market.entities.Product;
 import com.geekbrain.market.repositories.ProductRepository;
+import com.geekbrain.market.soap.ProductSOAP;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -21,16 +22,16 @@ public class ProductService {
         return productRepository.findAll(spec, PageRequest.of(page, size));
     }
 
-//    public List<Product> findAll(Specification<Product> spec){
-//        return productRepository.findAll(spec);
-//    }
+    public List<Product> findAll(){
+        return productRepository.findAll();
+    }
 
     public Optional<Product> findById(Long id) {
         return productRepository.findById(id);
     }
 
     public Product saveOrUpdate(Product product) {
-       return productRepository.save(product);
+        return productRepository.save(product);
     }
 
 
@@ -40,5 +41,15 @@ public class ProductService {
 
     public void deleteById(Long id) {
         productRepository.deleteById(id);
+    }
+
+    public ProductSOAP getProductSOAP(Product product) {
+        ProductSOAP productSOAP = new ProductSOAP();
+        productSOAP.setId(product.getId());
+        productSOAP.setName(product.getName());
+        productSOAP.setCategoryId(product.getCategory().getId());
+        productSOAP.setCategoryTitle(product.getCategory().getTitle());
+        productSOAP.setCost(product.getCost());
+        return productSOAP;
     }
 }

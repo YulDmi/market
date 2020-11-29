@@ -31,9 +31,4 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Collection<Role> roles ;
 
-    @OneToOne
-    @JoinColumn(name = "details_id")
-    @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    private DetailsUser details;
-
 }
