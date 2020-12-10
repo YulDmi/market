@@ -30,13 +30,13 @@ public class CartController {
                             HttpServletRequest request, HttpServletResponse response
     ) throws IOException {
         Product p = productService.findById(productId).orElseThrow(() -> new ResourceNotFoundException("Нельзя добавить продукт с ID: " + productId));
-        cart.add(p);
+        cart.add(p.getId());
         response.sendRedirect(request.getHeader("referer"));
     }
 
     @GetMapping("/inc/{product_id}")
     public String incrementProduct(@PathVariable(name = "product_id") Long productId) {
-        cart.increment(productId);
+        cart.add(productId);
       return "redirect:/cart";
     }
 
