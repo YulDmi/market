@@ -23,11 +23,7 @@ public class FullServerRunTest {
     public void fullRestTest(){
 
       List<CategoryDto> category = restTemplate.getForObject("/api/v1/categories", List.class);
-        не работает, ошибка
-         org.springframework.web.client.RestClientException: Error while extracting response for type [interface java.util.List] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `java.util.ArrayList<java.lang.Object>` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.ArrayList<java.lang.Object>` out of START_OBJECT token
-          at [Source: (PushbackInputStream); line: 1, column: 1]
         assertThat(category).isNotNull();
 
-
-    }
+}
 }

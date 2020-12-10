@@ -24,7 +24,6 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class RestProductController {
     private final ProductService productService;
-    private final CategoryService categoryService;
 
 
     @GetMapping
@@ -48,22 +47,7 @@ public class RestProductController {
         return new ProductDto(p);
     }
 
-    @PostMapping
-    public ProductDto createProduct(
-            @RequestParam String name,
-            @RequestParam Long categoryId,
-            @RequestParam Integer cost
-    ) {
-        Product p = new Product();
-        p.setName(name);
-        Category category = categoryService.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("Not category byID : " + categoryId));
-        p.setCategory(category);
-        p.setCost(cost);
-        p.setId(null);
-        productService.saveOrUpdate(p);
 
-        return new ProductDto(p);
-    }
 
     @PutMapping
     public Product updateProduct(@RequestBody Product p) {

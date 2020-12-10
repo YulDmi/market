@@ -23,7 +23,14 @@ public class CategoryService {
     public Optional<Category> findById(Long id){
         return categoryRepository.findById(id);
     }
-    public Category save(Category category){
-      return categoryRepository.save(category);
+
+    public Optional<Category> findByName(String title) { return categoryRepository.findByTitle(title);}
+
+    public CategoryDto save(CategoryDto categoryDto){
+      Category category = new Category();
+      category.setTitle(categoryDto.getTitle());
+      categoryRepository.save(category);
+        System.out.println("name category " + category.getTitle() + category.getId());
+        return categoryDto;
     }
 }

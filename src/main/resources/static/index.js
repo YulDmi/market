@@ -8,14 +8,17 @@
 
     function config($routeProvider, $httpProvider) {
         $routeProvider
+        .when('/main', {
+                            templateUrl: 'main/main.html',
+                    })
             .when('/auth', {
                             templateUrl: 'auth/auth.html',
                             controller: 'authController'
             })
             .when('/reg', {
-                                        templateUrl: 'reg/reg.html',
-                                        controller: 'regController'
-                        })
+                            templateUrl: 'reg/reg.html',
+                            controller: 'regController'
+            })
            .when('/admin', {
                            templateUrl: 'admin/admin.html',
                            controller: 'adminController'
@@ -25,8 +28,12 @@
                            controller: 'cartController'
            })
            .when('/prof', {
-                                      templateUrl: 'prof/prof.html',
-                                      controller: 'profController'
+                          templateUrl: 'prof/prof.html',
+                          controller: 'profController'
+           })
+           .when('/exit', {
+                          templateUrl: 'exit/exit.html',
+                          controller: 'exitController'
            })
            .when('/store', {
                            templateUrl: 'store/store.html',
@@ -63,3 +70,27 @@
         }
     }
 })();
+
+angular.module('app').controller('indexController', function ($scope, $http, $localStorage) {
+    const contextPath = 'http://localhost:8189/market';
+    $scope.isAuth = function () {
+        if($localStorage.currentUser) {
+            return true;
+        } else {
+            return false
+         }
+    };
+
+   $scope.tryToLogout = function () {
+        if($localStorage.currentUser) {
+          $scope.clearUser();
+         }
+      };
+
+      $scope.clearUser = function () {
+          delete $localStorage.currentUser;
+          $http.defaults.headers.common.Authorization = '';
+      };
+
+
+    });

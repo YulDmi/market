@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.security.Principal;
 
 @RestController
-@RequestMapping("/api/v1/profiles")
+@RequestMapping("/api/v1/user/profiles")
 @RequiredArgsConstructor
 public class RestDetailsUserController {
     private final DetailsUserService detailsUserService;

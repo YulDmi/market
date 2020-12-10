@@ -4,6 +4,7 @@ package com.geekbrain.market.controllers;
 import com.geekbrain.market.configs.JwtTokenUtil;
 import com.geekbrain.market.configs.jwt.JwtRequest;
 import com.geekbrain.market.configs.jwt.JwtResponse;
+import com.geekbrain.market.entities.Role;
 import com.geekbrain.market.entities.User;
 import com.geekbrain.market.exeptions.MarketError;
 import com.geekbrain.market.services.DetailsUserService;
@@ -20,6 +21,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -40,7 +43,6 @@ public class AuthController {
         }
         UserDetails userDetails = userService.loadUserByUsername(authRequest.getUsername());
         String token = jwtTokenUtil.generateToken(userDetails);
-
 
         return ResponseEntity.ok(new JwtResponse(token));
     }

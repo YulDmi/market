@@ -14,10 +14,12 @@ public class OrderDto {
     private List<OrderItemDto> orderItems;
     private int price;
     private String address;
+    private Long id;
 
     public OrderDto(Order o) {
         this.orderItems = o.getItems().stream().map(OrderItemDto::new).collect(Collectors.toList());
         this.price = o.getPrice();
         this.address = o.getAddress();
+        this.id = o.getId();
     }
 }
