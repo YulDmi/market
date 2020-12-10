@@ -21,7 +21,7 @@ import java.security.Principal;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/orders")
+@RequestMapping("/api/v1/user/orders")
 @RequiredArgsConstructor
 public class RestOrderController {
     private final UserService userService;

@@ -4,7 +4,7 @@ angular.module('app').controller('cartController', function ($scope, $http) {
     $scope.cartContentRequest = function () {
     console.log('cart')
         $http({
-            url: contextPath + '/api/v1/cart',
+            url: contextPath + '/api/v1/user/cart',
             method: 'GET'
         })
             .then(function (response) {
@@ -15,7 +15,7 @@ angular.module('app').controller('cartController', function ($scope, $http) {
 
     $scope.decrementItem = function (productId) {
         $http({
-            url: contextPath + '/api/v1/cart/dec/' + productId,
+            url: contextPath + '/api/v1/user/cart/dec/' + productId,
             method: 'GET'
         })
             .then(function (response) {
@@ -25,7 +25,7 @@ angular.module('app').controller('cartController', function ($scope, $http) {
 
     $scope.removeItem = function (productId) {
         $http({
-            url: contextPath + '/api/v1/cart/remove/' + productId,
+            url: contextPath + '/api/v1/user/cart/remove/' + productId,
             method: 'GET'
         })
             .then(function (response) {
@@ -35,7 +35,7 @@ angular.module('app').controller('cartController', function ($scope, $http) {
 
     $scope.incrementItem = function (productId) {
         $http({
-            url: contextPath + '/api/v1/cart/add/' + productId,
+            url: contextPath + '/api/v1/user/cart/add/' + productId,
             method: 'GET'
         })
             .then(function (response) {
@@ -46,7 +46,7 @@ angular.module('app').controller('cartController', function ($scope, $http) {
      $scope.createOrder = function () {
                   console.log('createOrder')
                       $http({
-                          url: contextPath + '/api/v1/orders',
+                          url: contextPath + '/api/v1/user/orders',
                           method: 'POST',
                           params: {
                               recipient: $scope.order ? $scope.order.recipient : null,

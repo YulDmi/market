@@ -22,7 +22,7 @@ angular.module('app').controller('storeController', function ($scope, $http) {
 
     $scope.addToCart = function (productId) {
         $http({
-            url: contextPath + '/api/v1/cart/add/' + productId,
+            url: contextPath + '/api/v1/user/cart/add/' + productId,
             method: 'GET'
         })
             .then(function (response) {

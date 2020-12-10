@@ -21,11 +21,13 @@ angular.module('app').controller('authController', function ($scope, $http, $loc
 
     $scope.tryToLogout = function () {
         $scope.clearUser();
+        if ($localStorage.currentUser) {
         if ($scope.user.username) {
             $scope.user.username = null;
         }
         if ($scope.user.password) {
             $scope.user.password = null;
+        }
         }
     };
 

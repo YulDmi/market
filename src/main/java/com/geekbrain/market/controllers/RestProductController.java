@@ -23,8 +23,7 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/v1/products")
 @RequiredArgsConstructor
 public class RestProductController {
-    private final  ProductService productService;
-    private final CategoryService categoryService;
+    private final ProductService productService;
 
 
     @GetMapping
@@ -43,26 +42,12 @@ public class RestProductController {
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable Long id) {
-        return productService.findById(id).orElseThrow(() -> new ResourceNotFoundException("Unable to find product with id: " + id));
+    public ProductDto getProductById(@PathVariable Long id) {
+        Product p = productService.findById(id).orElseThrow(() -> new ResourceNotFoundException("Unable to find product with id: " + id));
+        return new ProductDto(p);
     }
 
-@PostMapping
-public ProductDto createProduct(
-        @RequestParam String name,
-        @RequestParam Long categoryId,
-        @RequestParam Integer cost
-        ) {
-    Product p = new Product();
-    p.setName(name);
-    Category category = categoryService.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("Not category byID : " + categoryId));
-    p.setCategory(category);
-    p.setCost(cost);
-    p.setId(null);
-    productService.saveOrUpdate(p);
 
-    return new ProductDto(p);
-}
 
     @PutMapping
     public Product updateProduct(@RequestBody Product p) {

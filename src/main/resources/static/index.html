@@ -15,24 +15,28 @@
 
 <body>
 
-<div class="container">
+<div ng-controller="indexController" class="container">
     <h1>Магазин</h1>
+    <a class="btn btn-outline-warning" href="#!/main">Главная</a>
     <a class="btn btn-outline-warning" href="#!/auth">Войти</a>
     <a class="btn btn-outline-warning" href="#!/reg">Зарегистрироваться</a>
-    <a class="btn btn-outline-warning" href="#!/store">Магазин</a>
-    <a class="btn btn-outline-warning" href="#!/admin">Админка</a>
-    <a class="btn btn-outline-warning" href="#!/cart">Корзина</a>
-    <a class="btn btn-outline-warning" href="#!/prof">Профиль</a>
+    <a class="btn btn-outline-warning" href="#!/store">Наши товары</a>
+    <a class="btn btn-outline-warning" ng-if = "isAuth()" href="#!/cart">Корзина</a>
+    <a class="btn btn-outline-warning" ng-if = "isAuth()" href="#!/prof">Профиль</a>
+    <a class="btn btn-outline-warning" ng-if = "isAuth()" href="#!/admin">Администрирование</a>
+    <a class="btn btn-outline-warning" ng-click="tryToLogout()" ng-if = "isAuth()" href="#!/auth">Выйти</a>
 
     <ng-view></ng-view>
 
     <script src="index.js"></script>
+    <script src="main/main.js"></script>
     <script src="store/store.js"></script>
     <script src="reg/reg.js"></script>
-    <script src="admin/admin.js"></script>
     <script src="cart/cart.js"></script>
     <script src="auth/auth.js"></script>
+    <script src="admin/admin.js"></script>
     <script src="prof/prof.js"></script>
+
 </div>
 </body>
 </html>

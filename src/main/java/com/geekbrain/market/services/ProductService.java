@@ -1,6 +1,9 @@
 package com.geekbrain.market.services;
 
+import com.geekbrain.market.dto.ProductDto;
+import com.geekbrain.market.entities.Category;
 import com.geekbrain.market.entities.Product;
+import com.geekbrain.market.exeptions.ResourceNotFoundException;
 import com.geekbrain.market.repositories.ProductRepository;
 import com.geekbrain.market.soap.ProductSOAP;
 import lombok.AllArgsConstructor;
@@ -22,7 +25,7 @@ public class ProductService {
         return productRepository.findAll(spec, PageRequest.of(page, size));
     }
 
-    public List<Product> findAll(){
+    public List<Product> findAll() {
         return productRepository.findAll();
     }
 
@@ -34,6 +37,14 @@ public class ProductService {
         return productRepository.save(product);
     }
 
+    public Product createNewProduct(ProductDto productDto, Category category) {
+        Product product = new Product();
+        product.setName(productDto.getName());
+        product.setCost(productDto.getCost());
+        product.setCategory(category);
+
+        return saveOrUpdate(product);
+    }
 
     public void deleteAll() {
         productRepository.deleteAll();
