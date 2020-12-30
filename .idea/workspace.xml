@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7228449-5e99-4e7c-8801-1aad5fbfaf66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/DetailsUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/dto/DetailsUserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/controllers/RestOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrain/market/entities/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson2_6" />
+        <entry key="$PROJECT_DIR$" value="lesson3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -344,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607630867280</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactoring">
+      <created>1609348312071</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1609348312071</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,7 +387,8 @@
     <MESSAGE value="lesson2_6" />
     <MESSAGE value="lesson2_8" />
     <MESSAGE value="lesson2_8 last" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2_8 last" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1606666903511">
@@ -415,10 +423,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606935323551" />
-    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1607630866182">
+    <state x="692" y="53" key="CommitChangelistDialog2" timestamp="1609348310039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607630866182" />
+    <state x="692" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609348310039" />
     <state x="490" y="163" key="DBNavigator.ProjectSettingsDialog" timestamp="1602099749925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -431,14 +439,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1077" y="224" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608460424895" />
-    <state x="1077" y="435" width="310" height="269" key="Github.ShareDialog" timestamp="1600600343054">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1077" y="435" width="310" height="269" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600343054" />
-    <state x="1002" y="205" key="Github.UntrackedFilesDialog" timestamp="1600600350943">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1002" y="205" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600600350943" />
     <state width="1865" height="224" key="GridCell.Tab.0.bottom" timestamp="1607875415343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -483,10 +483,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="84" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601711371470" />
-    <state x="598" y="179" key="Vcs.Push.Dialog.v2" timestamp="1607630870079">
+    <state x="598" y="179" key="Vcs.Push.Dialog.v2" timestamp="1609348331584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607630870079" />
+    <state x="598" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609348331584" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604142692844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -499,10 +499,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1138" y="222" width="665" height="619" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601705626639" />
-    <state x="981" y="35" width="731" height="993" key="find.popup" timestamp="1600609464881">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="981" y="35" width="731" height="993" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600609464881" />
     <state x="230" y="143" key="new project wizard" timestamp="1605547392660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
