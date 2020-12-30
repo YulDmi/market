@@ -41,7 +41,11 @@ public class RestOrderController {
                           Principal principal
     ) {
         User user = userService.findByUsername(principal.getName()).orElseThrow(() -> new ResourceNotFoundException("Unable to create order for user: " + principal.getName() + ". User doesn't exist"));
-        Order order = new Order(user, cart, address);
+        Order order = new Order();
+        order.fromUser(user)
+                .price(cart)
+                .items(cart)
+                .address(address);
         orderService.save(order);
         cart.clear();
     }
