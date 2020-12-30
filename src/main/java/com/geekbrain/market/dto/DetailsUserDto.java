@@ -31,9 +31,13 @@ public class DetailsUserDto {
         this.year = user.getYear();
         this.sex = user.getSex();
         this.phone = user.getPhone();
-
-
     }
+
+
+
+
+
+
 }
 
 
